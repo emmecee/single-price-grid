@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+
+
+/***Typography**/
+h3 {
+    color: hsl(179, 62%, 43%);
+}
+
+h5 {
+    color: hsl(66, 85%, 52%);
+    font-size: 14px;
+}
+
+h4 {
+    font-weight: 700;
+}
+
+span {
+    color: hsla(203, 44%, 93%, 0.63);
+    font-size: 14px;
+    position: absolute;
+    top: 38%;
+    right: 44%;
+}
+
+p {
+    font-size: 14px;
+}
+
+.join-cont>p {
+    color: hsl(218, 22%, 67%);
+    line-height: 25px;
+}
+
+.whyus-cont>p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+
+/**Design**/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.9fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    gap: 0px;
+    grid-template-areas:
+        "join-comm"
+        "ms"
+        "why-us";
+    width: 90vw;
+    margin: auto 2rem;
+    margin-top: 2rem;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    padding: 25px;
+}
+
+.join-comm {
+    grid-area: join-comm;
+    background-color: #fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.ms {
+    grid-area: ms;
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+}
+
+.why-us {
+    grid-area: why-us;
+    background-color: hsl(178, 49%, 60%);
+    color: hsl(204, 43%, 93%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    padding: 0.794rem;
+    width: 90%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: hsl(204, 43%, 93%);
+    box-shadow: 0px 3px 11px 2px hsla(180, 39%, 20%, 0.53);
+    -webkit-box-shadow: 0px 3px 11px 2px hsla(180, 39%, 20%, 0.384);
+    -moz-box-shadow: 0px 3px 11px 2px hsl(179, 40%, 20%);
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.attribution {
+    margin: auto 2.5em;
+    margin-top: 3em;
+    ;
+}
+
+
+
+
+@media screen and (min-width:420px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1.1fr 1.1fr;
+        grid-template-rows: 0.9fr 0.9fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "join-comm join-comm"
+            "ms why-us";
+        margin-top: 4rem;
+        width: 50%;
+        margin-left: 18rem;
+    }
+
+    span {
+        right: 45%;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 25px;
+    }
+
+    .why-us {
+        border-bottom-left-radius: 0px;
+    }
+
+    .ms {
+        border-bottom-left-radius: 10px;
+    }
+
+}
